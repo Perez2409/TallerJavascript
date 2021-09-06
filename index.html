@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="syles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Taller JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1 style="color: #ff0000;">JavaScript</h1>
+            <hr>
+                <h2>Ejercicios</h2>
+            <hr>
+        </header>
+        <article>
+            <div class="content_card row justify-content-around text-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 1</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado1" aria-expanded="false" aria-controls="enunciado1">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado1">
+                            <div class="card card-body">
+                                Escribe un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora. Después debe mostrar por pantalla la paga que le corresponde.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio1()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result1">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 2</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado2" aria-expanded="false" aria-controls="enunciado2">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado2">
+                            <div class="card card-body">
+                                Escribir un programa que pida al usuario su peso (en kg) y estatura (en metros), calcule el índice de masa corporal y lo almacene en una variable, y muestre por pantalla la frase Tu índice de masa corporal es <imc> donde <imc> es el índice de masa corporal calculado redondeado con dos decimales. (kg/m2)
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Porfavor Digita Tu Peso</h6>
+                            <input type="number" id="peso" placeholder="">
+                            <h6 class="card-title">Porfavor Digita tu altura</h6>
+                            <input type="number" id="altura" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio2()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result2">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 3</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado3" aria-expanded="false" aria-controls="enunciado3">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado3">
+                            <div class="card card-body">
+                                Una tienda vende barras de dulce a $450 cada una. El dulce que no es el día tiene un descuento del 50%. Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa debe mostrar el precio habitual de una barra de dulce, el descuento que se le hace por no ser fresca y el coste final total.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio3()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result3">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 4</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado4" aria-expanded="false" aria-controls="enunciado4">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado4">
+                            <div class="card card-body">
+                                Escribir un programa que pida al usuario X cantidad de números en una lista y que luego de ingresar esa cantidad de números retorne la suma de todos ellos.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio4()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result4">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 5</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado5" aria-expanded="false" aria-controls="enunciado5">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado5">
+                            <div class="card card-body">
+                                Escribir un programa que pida al usuario una palabra y muestre por pantalla si es un palíndromo.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio5()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result5">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 6</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado6" aria-expanded="false" aria-controls="enunciado6">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado6">
+                            <div class="card card-body">
+                                Escribir un programa que pregunte por una muestra de números, separados por comas, los guarde en un arreglo y muestre por pantalla su media y desviación estándar.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio6()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result6">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio 7</h5>
+                        <p>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#enunciado7" aria-expanded="false" aria-controls="enunciado7">
+                                Enunciado
+                            </button>
+                        </p>
+                        <div class="collapse" id="enunciado7">
+                            <div class="card card-body">
+                                Escribir un programa que guarde en un objeto los nombres y precios de frutas, pregunte al usuario por una fruta, un número de kilos y muestre por pantalla el precio de ese número de kilos de fruta. Si la fruta no está en el diccionario debe mostrar un mensaje informando de ello.
+                            </div>
+                        </div>
+                        <form>
+                            <h6 class="card-title">Ingresa Numero de Horas</h6>
+                            <input type="number" id="numh" placeholder="">
+                            <h6 class="card-title">Ingresa El Valor De La Hora</h6>
+                            <input type="number" id="valorh" placeholder="">
+                            <button class="btn btn-primary btn-input" type="button" onclick="desafio7()">
+                                Enviar
+                            </button>
+                        </form>
+                            <div class="card card-body resultado" id="result7">
+                                Resultado
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <script type="text/javascript" src="js/desafio1.js"></script>
+    <script type="text/javascript" src="js/desafio2.js"></script>
+    <script type="text/javascript" src="js/desafio3.js"></script>
+    <script type="text/javascript" src="js/desafio4.js"></script>
+    <script type="text/javascript" src="js/desafio5.js"></script>
+    <script type="text/javascript" src="js/desafio6.js"></script>
+    <script type="text/javascript" src="js/desafio7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
