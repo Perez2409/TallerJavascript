@@ -10,14 +10,12 @@ function desafio5(){
         if (palabranew != palabrareves)
         {
 
-                alert("La Palabra " +palabra+ " No Es Palindromo" );
                 document.getElementById("result5").innerHTML = "La Palabra " +palabra+ " No Es Palindromo";
 
         }
         else
         {
 
-                alert("La Palabra " +palabra+ " Es Palindromo" );
                 document.getElementById("result5").innerHTML = "La Palabra " +palabra+ " Es Palindromo";
         }
 
