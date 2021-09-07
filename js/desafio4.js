@@ -22,9 +22,6 @@ function desafio4(){
                     suma += lista[i]*1;
                 }
 
-                alert("Array es " +lista);
-                alert("La suma de todos los numeros es " + suma);
-
                 document.getElementById("result4").innerHTML = "La Suma De Todos Los Numeros Es " +suma;
             }
     }
